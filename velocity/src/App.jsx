@@ -1,27 +1,30 @@
-import React from 'react'
-import { About } from './Components/About';
-import { BackToTopBtn } from './Components/BackToTopBtn';
-import { Brands } from './Components/Brands';
-import { Cars } from './Components/Cars';
-import { CarSlider } from './Components/CarSlider';
-import { Copyright } from './Components/Copyright';
-import { Cta } from './Components/Cta';
-import { DateSelection } from './Components/DateSelection';
-import { Footer } from './Components/Footer';
-import { Header } from './Components/Header';
-import { Hero } from './Components/Hero';
-import { HoursSelection } from './Components/HoursSelection';
-import { LocationSelection } from './Components/LocationSelection';
-import { Navbar } from './Components/Navbar';
-import { Search } from './Components/Search';
-import { SearchMobile } from './Components/SearchMobile';
-import { TestimonialSlider } from './Components/TestimonialSlider';
-import { Testimonials } from './Components/Testimonials';
-import { Why } from './Components/Why';
-
+import React from "react";
+import { About } from "./Components/About";
+import { BackToTopBtn } from "./Components/BackToTopBtn";
+import { Cars } from "./Components/Cars";
+import { Cta } from "./Components/Cta";
+import { Footer } from "./Components/Footer";
+import { Header } from "./Components/Header";
+import { Hero } from "./Components/Hero";
+import { Testimonials } from "./Components/Testimonials";
+import { Why } from "./Components/Why";
+import { Navbar } from "./Components/Navbar";
 
 const App = () => {
-  return <div>App</div>;
-}
+  return (
+    <div className="max-w-[1920px] bg-white mx-auto relative overflow-hidden">
+      <Header />
+      <Hero />
+      <Cars />
+      <About />
+      <Why />
+      <Testimonials />
+      <Cta />
+      <Footer />
+      <BackToTopBtn />
+      <div className="h-[4000px]"></div>
+    </div>
+  );
+};
 
-export default App
+export default App;
