@@ -8,7 +8,7 @@ import { Header } from "./Components/Header";
 import { Hero } from "./Components/Hero";
 import { Testimonials } from "./Components/Testimonials";
 import { Why } from "./Components/Why";
-import { Navbar } from "./Components/Navbar";
+
 
 const App = () => {
   return (
