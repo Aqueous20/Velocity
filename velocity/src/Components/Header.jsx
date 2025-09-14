@@ -5,8 +5,12 @@ import { SearchMobile } from "./SearchMobile";
 import { useMediaQuery } from "react-responsive";
 import logo from "../Assets/icons/velocity.svg";
 import { BiMenuAltRight, BiX } from "react-icons/bi";
+import {SearchContext} from '../Context/search.jsx'
+
 
 export const Header = () => {
+  const {setSearchActive} = useContext(SearchContext)
+
   const [header, setHeader] = useState(false);
   const [nav, setNav] = useState(false);
 
@@ -20,6 +24,12 @@ export const Header = () => {
         setHeader(true);
       } else {
         setHeader(false);
+      }
+
+      if (window.scrollY > 800){
+        setSearchActive(true);
+      }else {
+        setSearchActive(false);
       }
     };
 
@@ -117,16 +127,18 @@ export const Header = () => {
             Contact
           </Link>
           <Link
-            className="xl:hidden rounded-[10px] w-full uppercase font-medium text-white tracking-[2px] text-[13px] flex justify-center 
-            items-center transition-all h-14 max-w-[164px] mx-auto bg-[#101828] cursor-pointer"
+            className="cursor-pointer xl:hidden rounded-[10px] w-full uppercase font-medium text-white tracking-[2px] text-[13px] flex justify-center 
+            items-center transition-all h-14 max-w-[164px] mx-auto bg-[#101828]"
             to="/"
             activeClass="active"
             smooth={desktopMode}
             spy={true}
           >
             See all cars
+          </Link >
+          <Link className="cursor-pointer">
+            <SearchMobile  />
           </Link>
-          <SearchMobile />
         </nav>
       </div>
     </div>

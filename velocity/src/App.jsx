@@ -8,10 +8,12 @@ import { Header } from "./Components/Header";
 import { Hero } from "./Components/Hero";
 import { Testimonials } from "./Components/Testimonials";
 import { Why } from "./Components/Why";
+import {SearchContextProvider} from "./Context/search.jsx"
 
 
 const App = () => {
   return (
+    <SearchContextProvider>
     <div className="max-w-[1920px] bg-white mx-auto relative overflow-hidden">
       <Header />
       <Hero />
@@ -24,6 +26,7 @@ const App = () => {
       <BackToTopBtn />
       <div className="h-[4000px]"></div>
     </div>
+    </SearchContextProvider>
   );
 };
 

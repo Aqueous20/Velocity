@@ -14,3 +14,15 @@ some may be deleted
 
 september 10, 2025
 started the html structure and css design for the header component
+
+september 11,2025
+continued to work on header component
+
+september 12, 2025
+continued to work on header component and start search context
+
+september 13, 2025
+completed header component
+completed search context
+starting to work on search component
+may add to previous two components due to search component
