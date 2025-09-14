@@ -1,15 +1,14 @@
 import React, { useContext, useEffect, useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link } from "react-scroll";
-import { SearchMobile } from "./SearchMobile";
+import { SearchMobile } from "./SearchMobile.jsx";
 import { useMediaQuery } from "react-responsive";
 import logo from "../Assets/icons/velocity.svg";
 import { BiMenuAltRight, BiX } from "react-icons/bi";
-import {SearchContext} from '../Context/search.jsx'
-
+import { SearchContext } from "../context/search.jsx";
 
 export const Header = () => {
-  const {setSearchActive} = useContext(SearchContext)
+  const { setSearchActive } = useContext(SearchContext);
 
   const [header, setHeader] = useState(false);
   const [nav, setNav] = useState(false);
@@ -26,9 +25,9 @@ export const Header = () => {
         setHeader(false);
       }
 
-      if (window.scrollY > 800){
+      if (window.scrollY > 800) {
         setSearchActive(true);
-      }else {
+      } else {
         setSearchActive(false);
       }
     };
@@ -129,15 +128,15 @@ export const Header = () => {
           <Link
             className="cursor-pointer xl:hidden rounded-[10px] w-full uppercase font-medium text-white tracking-[2px] text-[13px] flex justify-center 
             items-center transition-all h-14 max-w-[164px] mx-auto bg-[#101828]"
-            to="/"
+            to="contact"
             activeClass="active"
             smooth={desktopMode}
             spy={true}
           >
             See all cars
-          </Link >
+          </Link>
           <Link className="cursor-pointer">
-            <SearchMobile  />
+            <SearchMobile />
           </Link>
         </nav>
       </div>

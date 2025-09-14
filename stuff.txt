@@ -3,3 +3,6 @@ primary is 101828
 secondary is 6667085
 default is ed1d24
 hover is dd242a
+
+section 
+w-full h-screen pt-[60px] xl:pt-[120px]

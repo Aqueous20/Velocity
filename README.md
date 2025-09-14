@@ -26,3 +26,7 @@ completed header component
 completed search context
 starting to work on search component
 may add to previous two components due to search component
+
+september 14, 2025
+adding some sections as to identify where the stuff are working and what isnt working 
+still working on search context mostly finish the application is still a bit buggy so fixing it 
