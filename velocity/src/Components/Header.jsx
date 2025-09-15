@@ -127,7 +127,7 @@ export const Header = () => {
           </Link>
           <Link
             className="cursor-pointer xl:hidden rounded-[10px] w-full uppercase font-medium text-white tracking-[2px] text-[13px] flex justify-center 
-            items-center transition-all h-14 max-w-[164px] mx-auto bg-[#101828]"
+            items-center transition-all duration-300 h-14 max-w-[164px] mx-auto bg-[#101828]"
             to="contact"
             activeClass="active"
             smooth={desktopMode}
