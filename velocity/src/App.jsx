@@ -1,13 +1,13 @@
 import React from "react";
-import { About } from "./components/About";
-import { BackToTopBtn } from "./components/BackToTopBtn";
-import { Cars } from "./components/Cars";
-import { Cta } from "./components/Cta";
-import { Footer } from "./components/Footer";
-import {Header} from "./components/Header.jsx"
-import { Hero } from "./components/Hero";
-import { Testimonials } from "./components/Testimonials";
-import { Why } from "./components/Why";
+import { About } from "./components/About.jsx";
+import { BackToTopBtn } from "./components/BackToTopBtn.jsx";
+import { Cars } from "./components/Cars.jsx";
+import { Cta } from "./components/Cta.jsx";
+import { Footer } from "./components/Footer.jsx";
+import { Header } from "./components/Header.jsx";
+import { Hero } from "./components/Hero.jsx";
+import { Testimonials } from "./components/Testimonials.jsx";
+import { Why } from "./components/Why.jsx";
 import { SearchContextProvider } from "./context/search.jsx";
 
 const App = () => {
