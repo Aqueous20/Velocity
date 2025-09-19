@@ -38,3 +38,6 @@ started working on locations seletion component
 
 September 18,2025
 continued to work on location selection component
+
+september 19, 1015
+still working on location selection component
