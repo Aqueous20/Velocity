@@ -16,6 +16,7 @@ const locations = [
 ]
 
 export const LocationSelection = () => {
+  const [location, setLocation] = useState('Select Loation')
   return (
     <div>LocationSelection</div>
   )

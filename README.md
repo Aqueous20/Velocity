@@ -35,3 +35,6 @@ added styeles to searchmobile component
 
 september 17 2025
 started working on locations seletion component
+
+September 18,2025
+continued to work on location selection component
