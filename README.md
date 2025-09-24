@@ -41,3 +41,6 @@ continued to work on location selection component
 
 september 19, 1015
 still working on location selection component
+
+september 23, 2025
+Location component almost complete
