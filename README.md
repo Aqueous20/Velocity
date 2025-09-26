@@ -48,3 +48,8 @@ Location component almost complete
 september 24, 2025
 completed location selection component
 started the dateselection component
+
+september 25, 2025
+completed dateselection component
+adjusted other compoenents with minor changes
+stated the hours selection component
