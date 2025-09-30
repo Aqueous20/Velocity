@@ -3,6 +3,7 @@ import { Search } from "./Search.jsx";
 import { SearchContext } from "../context/search.jsx";
 import google_play from "../assets/icons/buttons/google-play.svg";
 import app_store from "../assets/icons/buttons/app-store.svg";
+import hero_car from "../assets/images/hero/car.svg";
 
 export const Hero = () => {
   const { searchActive } = useContext(SearchContext);
@@ -17,7 +18,7 @@ export const Hero = () => {
               Explore Our Finest <span className="text-red-500">Global</span>{" "}
               Offers
             </h1>
-            <p className="text-base xl:text-xl xl:leading-8">
+            <p className="text-base xl:text-xl xl:leading-8 max-w-[550px] mx-auto xl:mx-0 mb-6 xl:mb-10">
               Find your ideal ride for any adventur with our diverse range of
               afordable and dependable rentals
             </p>
@@ -38,7 +39,12 @@ export const Hero = () => {
               </button>
             </div>
           </div>
-          <div>{/*image wrapper*/}image</div>
+          <div
+            className="relative w-full h-full max-h-[50vh] md:max-w-[70vw] "
+          >
+            {/*image wrapper*/}
+            <img src={hero_car} alt="binge sake" className="object-contain" />
+          </div>
         </div>
       </div>
       {searchActive ? (
