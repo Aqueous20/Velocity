@@ -25,7 +25,7 @@ export const DateSelection = () => {
     <Menu as="div" className="w-full h-full flex xl:flex-row">
       <div className="relative flex-1">
         <MenuButton className="dropdown-btn w-full h-full flex flex-col justify-center items-center outline-none xl:items-start xl:pl-8">
-          <div className="flex flex-col xl:flex-row items-center xl:gap-x-2 gap-y-2 xl:gap-y-0">
+          <div className="flex flex-col xl:flex-row items-center xl:gap-x-2 gap-y-2 xl:gap-y-0 cursor-pointer">
             <FaCalendarAlt className="text-red-500" />
             <div className="text-[15px] uppercase font-bold">Select Date</div>
           </div>

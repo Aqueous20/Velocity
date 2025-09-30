@@ -10,3 +10,6 @@ w-full h-screen pt-[60px] xl:pt-[120px]
 button
 rounded-[10px] w-full uppercase font-medium text-white tracking-[2px] text-[13px] flex justify-center 
 items-center transition-all duration-300
+
+h1
+text-4xl xl:text-[64px] text-[#101828] xl:leading-[72px] font-extrabold mb-[18px]

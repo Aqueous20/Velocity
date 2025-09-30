@@ -42,7 +42,7 @@ export const Header = () => {
     <div
       className={`${
         header ? "bg-white shadow-md py-2" : "bg-transparent shadow-none py-4"
-      } fixed w-full maax-w-[1920px] mx-auto z-20 transition-all duration-300`}
+      } fixed w-full max-w-[1920px] mx-auto z-20 transition-all duration-300`}
     >
       <div className="xl:container mx-auto flex flex-col xl:flex-row xl:items-center xl:justify-between">
         <div className="flex justify-between items-center px-4 w-full">
@@ -52,7 +52,7 @@ export const Header = () => {
             spy={true}
             className="cursor-pointer"
           >
-            <img src={logo} alt="binge sake" className="w-[125px] h-[90px]" />
+            <img src={logo} alt="binge sake" className="w-[125px] h-[70px]" />
           </Link>
           <div
             onClick={() => setNav(!nav)}

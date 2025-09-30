@@ -52,4 +52,8 @@ started the dateselection component
 september 25, 2025
 completed dateselection component
 adjusted other compoenents with minor changes
-stated the hours selection component
+started the hours selection component
+
+september 29 2025
+completed the hourselection component
+added button to Search component 

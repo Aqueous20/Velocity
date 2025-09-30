@@ -18,7 +18,7 @@ export const LocationSelection = () => {
     <Menu as="div" className="w-full h-full flex xl:flex-row">
       <div className="relative flex-1">
         <MenuButton className="dropdown-btn w-full h-full flex flex-col justify-center items-center outline-none xl:items-start xl:pl-8">
-          <div className="w-full h-16 xl:h-full flex justify-center xl:justify-start xl:border-r xl:border-black/10">
+          <div className="w-full h-16 xl:h-full flex justify-center xl:justify-start xl:border-r xl:border-black/10 cursor-pointer">
             <div className="flex flex-col justify-center">
               <div className="flex flex-col xl:flex-row items-center xl:gap-x-2 gap-y-2 xl:gap-y-0">
                 <FaMapMarkerAlt className="text-red-500" />
@@ -38,7 +38,15 @@ export const LocationSelection = () => {
                               text-center xl:text-left w-full bg-white max-w-[332px] py-6 rounded-[10px]"
         >
           {locations.map((location, index) => {
-            return <div onClick={() => setLocation(location)} key={index} className="cursor-pointer py-4 xl:pl-10 hover:bg-gray-50 text-[13px] uppercase">{location}</div>;
+            return (
+              <div
+                onClick={() => setLocation(location)}
+                key={index}
+                className="cursor-pointer py-4 xl:pl-10 hover:bg-gray-50 text-[13px] uppercase"
+              >
+                {location}
+              </div>
+            );
           })}
         </MenuItems>
       </div>
