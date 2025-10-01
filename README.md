@@ -57,3 +57,6 @@ started the hours selection component
 september 29 2025
 completed the hourselection component
 added button to Search component 
+
+september 30, 2025
+updated hero component 
