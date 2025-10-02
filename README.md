@@ -56,7 +56,13 @@ started the hours selection component
 
 september 29 2025
 completed the hourselection component
-added button to Search component 
+added button to Search component
 
 september 30, 2025
-updated hero component 
+updated hero component
+
+october 1, 2025
+completed hero component
+updated the brands component
+updated the carslider component
+updated the cars component
