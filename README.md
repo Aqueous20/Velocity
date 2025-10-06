@@ -66,3 +66,9 @@ completed hero component
 updated the brands component
 updated the carslider component
 updated the cars component
+
+october 3rd 2025
+updated carslider component
+
+october 5th 2025
+updated carslider component

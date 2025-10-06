@@ -15,7 +15,7 @@ import "swiper/css";
 
 import { FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa";
 
-import motion from "motion/react";
+import {motion} from "motion/react";
 
 const cars = [
   {
@@ -47,8 +47,97 @@ const cars = [
       },
     ],
   },
+  {
+    type: "Sedan",
+    name: "Toyota Corolla",
+    price: 25,
+    stars: 5,
+    image: { car2 },
+    info: [
+      {
+        icon: { gearshift },
+        text: "Manual",
+      },
+      {
+        icon: { seat },
+        text: "5 Seats",
+      },
+      {
+        icon: { gas },
+        text: "Gas",
+      },
+      {
+        icon: { engine },
+        text: "1600 HP",
+      },
+      {
+        icon: { wheel },
+        text: "Front",
+      },
+    ],
+  },
+  {
+    type: "SUV",
+    name: "Honda CR-V",
+    price: 35,
+    stars: 4.7,
+    image: { car3 },
+    info: [
+      {
+        icon: { gearshift },
+        text: "Automatic",
+      },
+      {
+        icon: { seat },
+        text: "5 Seats",
+      },
+      {
+        icon: { gas },
+        text: "Gas",
+      },
+      {
+        icon: { engine },
+        text: "1600 HP",
+      },
+      {
+        icon: { wheel },
+        text: "Front",
+      },
+    ],
+  },
+  {
+    type: "Convertible",
+    name: "Mazda MX-5",
+    price: 32,
+    stars: 4.9,
+    image: { car2 },
+    info: [
+      {
+        icon: { gearshift },
+        text: "Automatic",
+      },
+      {
+        icon: { seat },
+        text: "5 Seats",
+      },
+      {
+        icon: { gas },
+        text: "Gas",
+      },
+      {
+        icon: { engine },
+        text: "1600 HP",
+      },
+      {
+        icon: { wheel },
+        text: "Front",
+      },
+    ],
+  },
 ];
 
 export const CarSlider = () => {
-  return <div>CarSlider</div>;
+  return <div className="container mx-auto">
+    <Swiper breakpoints={{320:{slidesPerView}}}></Swiper>
+  </div>;
 };
