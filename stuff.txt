@@ -13,3 +13,6 @@ items-center transition-all duration-300
 
 h1
 text-4xl xl:text-[64px] text-[#101828] xl:leading-[72px] font-extrabold mb-[18px]
+
+btn large
+ h-16

@@ -13,7 +13,13 @@ import { motion } from "motion/react";
 export const Brands = () => {
   return (
     <section className="xl:pt-16 xl:h-[200px] bg-white flex flex-col justify-center">
-      <div className="container mx-auto">
+      <motion.div
+        initial={{ opacity: 0, y: 40 }} // "up" effect
+        whileInView={{ opacity: 1, y: 0 }} // visible state
+        transition={{ duration: 0.6, delay: 0.4 }}
+        viewport={{ once: false, amount: 0.6 }}
+        className="container mx-auto"
+      >
         {/* Brand Wrapper */}
         <div className="grid grid-cols-3 gap-6 place-items-center xl:flex xl:flex-wrap xl:gap-x-6 xl:justify-between">
           <div>
@@ -42,7 +48,7 @@ export const Brands = () => {
             <img src={mazda} alt="binge sake" className="w-[62px] h-[50px]" />
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };
