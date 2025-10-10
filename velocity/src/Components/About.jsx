@@ -20,7 +20,8 @@ export const About = () => {
   });
   return (
     <section
-      className="w-full h-screen pt-[60px] xl:pt-[120px] flex items-center ref={ref}"
+      className="w-full h-screen pt-[60px] xl:pt-[120px] flex items-center"
+      ref={ref}
       id="about"
     >
       <div className="container mx-auto">
@@ -43,9 +44,46 @@ export const About = () => {
                 car experience
               </p>
               {/*text & stats*/}
-              <div>
+              <div className="flex">
                 {/*Car Types*/}
-                <div></div>
+                <div className="flex flex-col w-[100px] ">
+                  <MdOutlineDirectionsCar className="text-5xl text-red-500 mb-2" />
+                  <div className="text-3xl font-black mb-2">
+                    {inView ? (
+                      <CountUp start={0} end={50} duration={3} delay={1} />
+                    ) : null}
+                    +
+                  </div>
+                  <div className="uppercase text-[13px] font-semibold text-[#667085]">
+                    car <br /> types
+                  </div>
+                </div>
+                {/*rental outlets*/}
+                <div className="flex flex-col w-[100px] ">
+                  <MdOutlineDirectionsCar className="text-5xl text-red-500 mb-2" />
+                  <div className="text-3xl font-black mb-2">
+                    {inView ? (
+                      <CountUp start={0} end={50} duration={3} delay={1} />
+                    ) : null}
+                    +
+                  </div>
+                  <div className="uppercase text-[13px] font-semibold text-[#667085]">
+                    car <br /> types
+                  </div>
+                </div>
+                {/*repair points*/}
+                <div className="flex flex-col w-[100px] ">
+                  <MdOutlineDirectionsCar className="text-5xl text-red-500 mb-2" />
+                  <div className="text-3xl font-black mb-2">
+                    {inView ? (
+                      <CountUp start={0} end={50} duration={3} delay={1} />
+                    ) : null}
+                    +
+                  </div>
+                  <div className="uppercase text-[13px] font-semibold text-[#667085]">
+                    car <br /> types
+                  </div>
+                </div>
               </div>
             </div>
           </div>

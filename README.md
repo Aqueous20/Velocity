@@ -74,9 +74,12 @@ october 5th 2025
 updated carslider component
 
 october 6th 2025
-completed car slider component 
+completed car slider component
 completed brand component
 completed cars component
 
 october 7th 2025
 updated about us component
+
+october 9th 2025
+edited about component
