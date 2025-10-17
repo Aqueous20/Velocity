@@ -83,3 +83,6 @@ updated about us component
 
 october 9th 2025
 edited about component
+
+october 17th 2025
+completed about component
