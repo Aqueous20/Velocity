@@ -86,3 +86,6 @@ edited about component
 
 october 17th 2025
 completed about component
+
+november 3rd 2025
+adjusted responsiveness of about section on smaller screens
