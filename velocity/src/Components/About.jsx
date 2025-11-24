@@ -24,7 +24,7 @@ export const About = () => {
       className="w-full min-h-screen py-16 xl:py-24 flex items-center overflow-hidden"
     >
       <div className="container mx-auto">
-        <div className="flex flex-col xl:flex-row xl:justify-between gap-10 items-center">
+        <div className="flex flex-col sm:items-start xl:flex-row xl:justify-between gap-10 items-center">
           {/* LEFT IMAGE */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
