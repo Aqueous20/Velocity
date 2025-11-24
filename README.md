@@ -89,3 +89,10 @@ completed about component
 
 november 3rd 2025
 adjusted responsiveness of about section on smaller screens
+
+november 5th 2025
+adjusted responsiveness of header hero and cars and other coresponding component on smaller devices
+
+november 24th 2025
+corrected the responsiveness of all componenets on all screen sizes
+started the why us component 

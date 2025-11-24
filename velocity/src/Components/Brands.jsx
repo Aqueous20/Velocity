@@ -21,7 +21,7 @@ export const Brands = () => {
         className="container mx-auto"
       >
         {/* Brand Wrapper */}
-        <div className="grid grid-cols-3 gap-6 place-items-center xl:flex xl:flex-wrap xl:gap-x-6 xl:justify-between">
+        <div className="hidden md:grid grid-cols-3 gap-6 place-items-center xl:flex xl:flex-wrap xl:gap-x-6 xl:justify-between md:pt-16 xl:pt-20">
           <div>
             <img src={ford} alt="binge sake" className="w-[85px] h-[32px]" />
           </div>

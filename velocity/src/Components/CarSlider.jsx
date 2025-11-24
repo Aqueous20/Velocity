@@ -13,7 +13,7 @@ import car3 from "../assets/images/carSlider/car03.svg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
-import { FaStar, FaStarHalfAlt} from "react-icons/fa";
+import { FaStar, FaStarHalfAlt } from "react-icons/fa";
 
 import { motion } from "motion/react";
 
@@ -180,7 +180,9 @@ export const CarSlider = () => {
                     {!Number.isInteger(car.stars) && <FaStarHalfAlt />}
                   </div>
                 </div>
-                <div className="text-center text-red-500 uppercase mb-2 mr-14">car info</div>
+                <div className="text-center text-red-500 uppercase mb-2 mr-14">
+                  car info
+                </div>
                 <div className="flex gap-x-3 xl:gap-x-4 w-max mb-10">
                   {car.info.map((item, index) => {
                     return (

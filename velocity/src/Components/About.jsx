@@ -14,115 +14,118 @@ import { motion } from "motion/react";
 
 export const About = () => {
   const [ref, inView] = useInView({
-    threshold: 0.3,
+    threshold: 0.5,
   });
 
   return (
     <section
-      ref={ref}
       id="about"
-      className="w-full min-h-screen pt-20 xl:pt-28 flex items-center overflow-hidden"
+      ref={ref}
+      className="w-full min-h-screen py-16 xl:py-24 flex items-center overflow-hidden"
     >
-      <div className="container mx-auto px-4 xl:px-0">
-        <div className="flex flex-col xl:flex-row xl:items-center xl:justify-between gap-12 xl:gap-20">
-          {/* Image Section */}
+      <div className="container mx-auto">
+        <div className="flex flex-col xl:flex-row xl:justify-between gap-10 items-center">
+          {/* LEFT IMAGE */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: 0.3 }}
+            transition={{ duration: 0.4, delay: 0.4 }}
             viewport={{ once: false, amount: 0.6 }}
             className="flex-1 flex justify-center"
           >
             <img
               src={car01}
-              alt="car showcase"
-              className="rounded-[20px] w-full max-w-[600px] h-auto object-cover"
+              alt="about car"
+              className="rounded-[20px] w-full max-w-[500px] h-auto mx-auto"
             />
           </motion.div>
 
-          {/* Text Section */}
-          <div className="flex-1 flex flex-col justify-center">
-            <motion.h2
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-              viewport={{ once: false, amount: 0.6 }}
-              className="text-3xl md:text-4xl font-bold mb-6 leading-snug"
-            >
-              Car Services Simplified
-            </motion.h2>
+          {/* RIGHT CONTENT */}
+          <div className="flex-1 flex items-center xl:justify-center">
+            <div className="w-full xl:max-w-[517px]">
+              {/* Heading */}
+              <motion.h2
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.4 }}
+                viewport={{ once: false, amount: 0.6 }}
+                className="text-3xl md:text-4xl mb-6 font-bold"
+              >
+                Car Services Simplified
+              </motion.h2>
 
-            <motion.p
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.5 }}
-              viewport={{ once: false, amount: 0.6 }}
-              className="text-gray-600 mb-10 max-w-md leading-relaxed"
-            >
-              Rent, choose, and repair with ease. Our convenient locations,
-              diverse car types, and reliable repair points ensure a seamless
-              car experience.
-            </motion.p>
+              {/* Paragraph */}
+              <motion.p
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.6 }}
+                viewport={{ once: false, amount: 0.6 }}
+                className="mb-10 max-w-md leading-relaxed"
+              >
+                Rent, choose and repair with ease. Our convenient locations,
+                diverse car types, and reliable repair points ensure a seamless
+                car experience.
+              </motion.p>
 
-            {/* Stats Section */}
-            <motion.div
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.6 }}
-              viewport={{ once: false, amount: 0.6 }}
-              className="flex flex-wrap items-center justify-start gap-8 mb-12"
-            >
-              {/* Car Types */}
-              <div className="flex flex-col items-center text-center">
-                <MdOutlineDirectionsCar className="text-5xl text-red-500 mb-2" />
-                <div className="text-3xl font-black mb-1">
-                  {inView ? (
-                    <CountUp start={0} end={50} duration={3} delay={1} />
-                  ) : null}
-                  +
+              {/* Stats */}
+              <motion.div
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.8 }}
+                viewport={{ once: false, amount: 0.2 }}
+                className="flex flex-wrap gap-8 mb-12"
+              >
+                {/* SINGLE STAT */}
+                <div className="flex flex-col items-center w-[90px]">
+                  <MdOutlineDirectionsCar className="text-5xl text-red-500 mb-2" />
+                  <div className="text-3xl font-black mb-1">
+                    {inView ? (
+                      <CountUp start={0} end={50} duration={3} delay={1} />
+                    ) : null}
+                    +
+                  </div>
+                  <div className="uppercase text-[13px] text-[#667085] font-semibold text-center leading-tight">
+                    car types
+                  </div>
                 </div>
-                <div className="uppercase text-[13px] font-semibold text-[#667085]">
-                  Car <br /> Types
-                </div>
-              </div>
 
-              {/* Rental Outlets */}
-              <div className="flex flex-col items-center text-center">
-                <MdOutlineMapsHomeWork className="text-5xl text-red-500 mb-2" />
-                <div className="text-3xl font-black mb-1">
-                  {inView ? (
-                    <CountUp start={0} end={135} duration={3} delay={1} />
-                  ) : null}
+                <div className="flex flex-col items-center w-[90px]">
+                  <MdOutlineMapsHomeWork className="text-5xl text-red-500 mb-2" />
+                  <div className="text-3xl font-black mb-1">
+                    {inView ? (
+                      <CountUp start={0} end={135} duration={3} delay={1} />
+                    ) : null}
+                  </div>
+                  <div className="uppercase text-[13px] text-[#667085] font-semibold text-center leading-tight">
+                    rental outlets
+                  </div>
                 </div>
-                <div className="uppercase text-[13px] font-semibold text-[#667085]">
-                  Rental <br /> Outlets
-                </div>
-              </div>
 
-              {/* Repair Points */}
-              <div className="flex flex-col items-center text-center">
-                <MdOutlineBuildCircle className="text-5xl text-red-500 mb-2" />
-                <div className="text-3xl font-black mb-1">
-                  {inView ? (
-                    <CountUp start={0} end={35} duration={3} delay={1} />
-                  ) : null}
+                <div className="flex flex-col items-center w-[90px]">
+                  <MdOutlineBuildCircle className="text-5xl text-red-500 mb-2" />
+                  <div className="text-3xl font-black mb-1">
+                    {inView ? (
+                      <CountUp start={0} end={35} duration={3} delay={1} />
+                    ) : null}
+                  </div>
+                  <div className="uppercase text-[13px] text-[#667085] font-semibold text-center leading-tight">
+                    repair points
+                  </div>
                 </div>
-                <div className="uppercase text-[13px] font-semibold text-[#667085]">
-                  Repair <br /> Points
-                </div>
-              </div>
-            </motion.div>
+              </motion.div>
 
-            {/* Button */}
-            <motion.button
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.8 }}
-              viewport={{ once: false, amount: 0.6 }}
-              className="bg-red-500 hover:bg-[#dd242a] rounded-[10px] w-full sm:w-[184px] h-14 uppercase font-medium text-white tracking-[2px] text-[13px] shadow-lg transition-all"
-            >
-              See All Cars
-            </motion.button>
+              {/* Button (desktop only) */}
+              <motion.button
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 1 }}
+                viewport={{ once: false, amount: 0.6 }}
+                className="hidden xl:block bg-red-500 hover:bg-[#dd242a] rounded-[10px] w-full h-16 
+                           max-w-[184px] uppercase font-medium text-white tracking-[2px] text-[13px]"
+              >
+                See all cars
+              </motion.button>
+            </div>
           </div>
         </div>
       </div>
