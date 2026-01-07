@@ -1,5 +1,4 @@
 import React, { useContext, useEffect, useState } from "react";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link } from "react-scroll";
 import { SearchMobile } from "./SearchMobile.jsx";
 import { useMediaQuery } from "react-responsive";
@@ -16,6 +15,13 @@ export const Header = () => {
   const desktopMode = useMediaQuery({
     query: "(min-width: 1280px)",
   });
+
+  const handleLinkClick = () => {
+    if (window.innerWidth < 1280) {
+      setNav(false);
+    }
+  };
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -49,6 +55,7 @@ export const Header = () => {
           <Link
             to="home"
             smooth={desktopMode}
+            onClick={handleLinkClick}
             spy={true}
             className="cursor-pointer"
           >
@@ -74,6 +81,7 @@ export const Header = () => {
           <Link
             className="cursor-pointer"
             to="home"
+            onClick={handleLinkClick}
             activeClass="active"
             smooth={desktopMode}
             spy={true}
@@ -83,6 +91,7 @@ export const Header = () => {
           <Link
             className="cursor-pointer"
             to="cars"
+            onClick={handleLinkClick}
             activeClass="active"
             smooth={desktopMode}
             spy={true}
@@ -92,6 +101,7 @@ export const Header = () => {
           <Link
             className="cursor-pointer"
             to="about"
+            onClick={handleLinkClick}
             activeClass="active"
             smooth={desktopMode}
             spy={true}
@@ -101,6 +111,7 @@ export const Header = () => {
           <Link
             className="cursor-pointer"
             to="why"
+            onClick={handleLinkClick}
             activeClass="active"
             smooth={desktopMode}
             spy={true}
@@ -110,6 +121,7 @@ export const Header = () => {
           <Link
             className="cursor-pointer"
             to="testimonials"
+            onClick={handleLinkClick}
             activeClass="active"
             smooth={desktopMode}
             spy={true}
@@ -119,6 +131,7 @@ export const Header = () => {
           <Link
             className="cursor-pointer"
             to="contact"
+            onClick={handleLinkClick}
             activeClass="active"
             smooth={desktopMode}
             spy={true}
@@ -130,6 +143,7 @@ export const Header = () => {
             items-center transition-all duration-300 h-14 max-w-[164px] mx-auto bg-[#101828]"
             to="contact"
             activeClass="active"
+            onClick={handleLinkClick}
             smooth={desktopMode}
             spy={true}
           >

@@ -96,3 +96,7 @@ adjusted responsiveness of header hero and cars and other coresponding component
 november 24th 2025
 corrected the responsiveness of all componenets on all screen sizes
 started the why us component 
+
+january 6th 2026
+finally back to finish this project due to time constraints with my job occupying most of my time 
+completed why us section 
