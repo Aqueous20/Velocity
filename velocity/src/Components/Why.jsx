@@ -47,14 +47,47 @@ export const Why = () => {
           <img src={car} alt="binge sake" className="w-[1060px] h-[420px]" />
         </motion.div>
         {/*Grid Items*/}
-        <div>
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          viewport={{ once: false, amount: 0.6 }}
+          className="flex flex-wrap justify-center xl:grid xl:grid-cols-3 gap-4 xl:gap-y-0 xl:gap-x-[30px]"
+        >
           {/*Item 1*/}
-          <div>
+          <div className="flex flex-col items-center text-center max-w-[160px] xl:max-w-none p-2 xl:p-0">
             <MdKey className="text-[38px] mb-4 text-red-500" />
-            <h3>Rent Simply And Quickly</h3>
-            <p></p>
+            <h3 className="text-xl mb-4 font-semibold">
+              Rent Simply And Quickly
+            </h3>
+            <p className="hidden xl:flex">
+              We prioritize your need and we go above and beyond to ensure your
+              experince with us is nothing short of outstanding
+            </p>
           </div>
-        </div>
+          {/*Item 2*/}
+          <div className="flex flex-col items-center text-center max-w-[160px] xl:max-w-none p-2 xl:p-0">
+            <MdTrendingUp className="text-[38px] mb-4 text-red-500" />
+            <h3 className="text-xl mb-4 font-semibold">
+              Modern & well maintained vehicles
+            </h3>
+            <p className="hidden xl:flex">
+              We prioritize your need and we go above and beyond to ensure your
+              experince with us is nothing short of outstanding
+            </p>
+          </div>
+          {/*Item 3*/}
+          <div className="flex flex-col items-center text-center max-w-[160px] xl:max-w-none p-2 xl:p-0">
+            <MdHandshake className="text-[38px] mb-4 text-red-500" />
+            <h3 className="text-xl mb-4 font-semibold">
+              Promt and flexible services
+            </h3>
+            <p className="hidden xl:flex">
+              We prioritize your need and we go above and beyond to ensure your
+              experince with us is nothing short of outstanding
+            </p>
+          </div>
+        </motion.div>
       </div>
     </section>
   );
