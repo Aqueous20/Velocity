@@ -101,5 +101,11 @@ january 6th 2026
 finally back to finish this project due to time constraints with my job occupying most of my time
 completed why us section
 
-january 19th 2025
+january 19th 2026
 completed why us component
+
+january 21st 2026
+started testimonial slider component
+started testimonials component
+completed testimonial slider component
+completed testimonial component

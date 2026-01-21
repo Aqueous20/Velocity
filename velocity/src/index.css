@@ -1,28 +1,35 @@
 @import "tailwindcss";
 
-body{
-    background-color: #dedede;
-    color: #101828;
+body {
+  background-color: #dedede;
+  color: #101828;
 }
 
 /* Date Range */
 
-.rdrDayToday:not(.rdrDayPassive).rdrInRange ~ .rdrDayNumber span::after, 
-.rdrDayToday:not(.rdrDayPassive).rdrStartEdge ~ .rdrDayNumber span::after, 
-.rdrDayToday:not(.rdrDayPassive).rdrEndEdge ~ .rdrDayNumber span::after, 
+.rdrDayToday:not(.rdrDayPassive).rdrInRange ~ .rdrDayNumber span::after,
+.rdrDayToday:not(.rdrDayPassive).rdrStartEdge ~ .rdrDayNumber span::after,
+.rdrDayToday:not(.rdrDayPassive).rdrEndEdge ~ .rdrDayNumber span::after,
 .rdrDayToday:not(.rdrDayPassive).rdrSelected ~ .rdrDayNumber span::after {
-    background-color: #fff !important;
+  background-color: #fff !important;
 }
 
 .rdrDayToday .rdrDayNumber span:after {
-    background-color: #ed1d24 !important;
+  background-color: #ed1d24 !important;
 }
 
-.rdrMonthAndYearPickers{
-    font-size: 16px;
+.rdrMonthAndYearPickers {
+  font-size: 16px;
 }
 
-.rdrDayNumber, .rdrWeekDay{
-    color: #1e1f23 !important;
-    font-weight: 500 !important;
+.rdrDayNumber,
+.rdrWeekDay {
+  color: #1e1f23 !important;
+  font-weight: 500 !important;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  background-color: #f13024;
 }

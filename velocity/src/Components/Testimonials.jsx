@@ -1,12 +1,17 @@
 import React from "react";
 
+//components
+import { TestimonialSlider } from "./TestimonialSlider.jsx";
+
 export const Testimonials = () => {
   return (
     <section
-      className="w-full h-screen pt-[60px] xl:pt-[120px] flex items-center bg-green-200"
+      className="w-full min-h-screen flex items-center py-16 xl:py-24 overflow-hidden"
       id="testimonials"
     >
-      Testimonials
+      <div className="container mx-auto">
+        <TestimonialSlider />
+      </div>
     </section>
   );
 };
