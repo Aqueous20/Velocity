@@ -109,3 +109,8 @@ started testimonial slider component
 started testimonials component
 completed testimonial slider component
 completed testimonial component
+
+january 30 2026
+completed the cta component 
+component is now fully responsive
+started the footer component
