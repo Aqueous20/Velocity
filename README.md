@@ -111,15 +111,16 @@ completed testimonial slider component
 completed testimonial component
 
 january 30 2026
-completed the cta component 
+completed the cta component
 component is now fully responsive
 started the footer component
 
 january 31st 2026
 completed the footer component
-started copyright component 
+started copyright component
 completed copy right component
 started back to top button component
 completed back to top button component
 
 project completed will launch to firebase tmr
+https://velocity-rentals-2b514.web.app
