@@ -24,7 +24,7 @@ export const Footer = () => {
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, delay: 0.4 }}
-          viewport={{ once: false, amount: 0.6 }}
+          viewport={{ once: false, amount: 0.2 }}
           className="flex flex-col lg:flex-row lg:justify-between items-start gap-x-5 gap-y-14"
         >
           <div className="flex flex-col flex-1 gap-y-8">
@@ -113,7 +113,7 @@ export const Footer = () => {
           </div>
         </motion.div>
       </div>
-      <Copyright/>
+      <Copyright />
     </footer>
   );
 };

@@ -119,3 +119,7 @@ january 31st 2026
 completed the footer component
 started copyright component 
 completed copy right component
+started back to top button component
+completed back to top button component
+
+project completed will launch to firebase tmr

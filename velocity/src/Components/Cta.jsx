@@ -13,7 +13,7 @@ export const Cta = () => {
       className="w-full min-h-screen flex items-center py-16 xl:py-24 overflow-hidden"
       id="contact"
     >
-      <div className="conatiner mx-auto">
+      <div className="container mx-auto">
         <div className="flex flex-col md:flex-row xl:items-center">
           {/*text*/}
           <div className="flex-1 xl:ml-24 text-center md:text-left mb-12 md:mb-0">
@@ -43,7 +43,7 @@ export const Cta = () => {
               {/*BTNS*/}
               <motion.div
                 initial={{ opacity: 0, x: -40 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
                 viewport={{ once: false, amount: 0.6 }}
                 className="flex gap-x-3 justify-center md:justify-start"
@@ -73,7 +73,7 @@ export const Cta = () => {
             viewport={{ once: false, amount: 0.6 }}
             className="flex-1 flex justify-center order-1 md:order-none"
           >
-            <img src={phone} alt="binge sake" className="w-[320px] h[640px]" />
+            <img src={phone} alt="binge sake" className="w-[320px] h-auto" />
           </motion.div>
         </div>
       </div>
