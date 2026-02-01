@@ -114,3 +114,8 @@ january 30 2026
 completed the cta component 
 component is now fully responsive
 started the footer component
+
+january 31st 2026
+completed the footer component
+started copyright component 
+completed copy right component
